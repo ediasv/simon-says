@@ -17,10 +17,10 @@ add_executable(exe
 ./src/main.cpp
 )
 
-target_include_directories(main PUBLIC ./include/)
+target_include_directories(exe PUBLIC ./include/)
 
-target_link_libraries(main
+target_link_libraries(exe
 PUBLIC
 sfml-graphics)
 
-target_compile_features(main PRIVATE cxx_std_17)
+target_compile_features(exe PRIVATE cxx_std_17)
